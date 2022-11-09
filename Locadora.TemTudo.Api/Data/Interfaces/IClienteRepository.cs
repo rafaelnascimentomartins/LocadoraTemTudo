@@ -7,5 +7,7 @@ namespace Locadora.TemTudo.Api.Data.Interfaces
         List<Cliente> BuscarClientes();
         void Adicionar(Cliente model);
         void Editar(Cliente model);
+        void Remover(Cliente model);
+        Cliente BuscarPorId(int id);
     }
 }

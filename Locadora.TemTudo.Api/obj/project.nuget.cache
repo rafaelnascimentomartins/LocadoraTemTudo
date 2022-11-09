@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MZ1yOQmjtz0SnCS8troHjk5SAQj252krTckMRrj1YKYnVEV0szBqtf5Q3xfiPjOPO8Clrw6DH5SVTYgN1XAUAw==",
+  "dgSpecHash": "oaIRuGbaRr0kk5WUg9RsMWBWnBWjTQ1jqxyNqX/jVc3DAnj9B+IA50afw2y98xAXQtFKQxcN4A4y+hgpoK6fyg==",
   "success": true,
-  "projectFilePath": "D:\\Projetos\\Locadora\\Locadora.TemTudo\\Locadora.TemTudo.Api\\Locadora.TemTudo.Api.csproj",
+  "projectFilePath": "D:\\Projetos\\GitHub\\LocadoraTemTudo\\Locadora.TemTudo.Api\\Locadora.TemTudo.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rafael\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Rafael\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

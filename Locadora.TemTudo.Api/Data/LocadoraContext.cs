@@ -23,6 +23,8 @@ namespace Locadora.TemTudo.Api.Data
         public DbSet<Cliente> Clientes { get; set; }
         public DbSet<ClienteEndereco> ClientesEnderecos { get; set; }
 
+        public DbSet<LogErro> LogsErros { get; set; }
+
         public LocadoraContext(DbContextOptions options) : base(options) { }
 
         public LocadoraContext(string connectionString) : base() { }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projetos\\Locadora\\Locadora.TemTudo\\Locadora.TemTudo.Api\\Locadora.TemTudo.Api.csproj": {}
+    "D:\\Projetos\\GitHub\\LocadoraTemTudo\\Locadora.TemTudo.Api\\Locadora.TemTudo.Api.csproj": {}
   },
   "projects": {
-    "D:\\Projetos\\Locadora\\Locadora.TemTudo\\Locadora.TemTudo.Api\\Locadora.TemTudo.Api.csproj": {
+    "D:\\Projetos\\GitHub\\LocadoraTemTudo\\Locadora.TemTudo.Api\\Locadora.TemTudo.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projetos\\Locadora\\Locadora.TemTudo\\Locadora.TemTudo.Api\\Locadora.TemTudo.Api.csproj",
+        "projectUniqueName": "D:\\Projetos\\GitHub\\LocadoraTemTudo\\Locadora.TemTudo.Api\\Locadora.TemTudo.Api.csproj",
         "projectName": "Locadora.TemTudo.Api",
-        "projectPath": "D:\\Projetos\\Locadora\\Locadora.TemTudo\\Locadora.TemTudo.Api\\Locadora.TemTudo.Api.csproj",
+        "projectPath": "D:\\Projetos\\GitHub\\LocadoraTemTudo\\Locadora.TemTudo.Api\\Locadora.TemTudo.Api.csproj",
         "packagesPath": "C:\\Users\\Rafael\\.nuget\\packages\\",
-        "outputPath": "D:\\Projetos\\Locadora\\Locadora.TemTudo\\Locadora.TemTudo.Api\\obj\\",
+        "outputPath": "D:\\Projetos\\GitHub\\LocadoraTemTudo\\Locadora.TemTudo.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Rafael\\AppData\\Roaming\\NuGet\\NuGet.Config",

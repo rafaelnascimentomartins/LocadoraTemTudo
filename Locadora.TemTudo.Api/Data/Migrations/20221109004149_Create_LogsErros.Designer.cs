@@ -4,6 +4,7 @@ using Locadora.TemTudo.Api.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Locadora.TemTudo.Api.Data.Migrations
 {
     [DbContext(typeof(LocadoraContext))]
-    partial class LocadoraContextModelSnapshot : ModelSnapshot
+    [Migration("20221109004149_Create_LogsErros")]
+    partial class Create_LogsErros
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -56,7 +58,7 @@ namespace Locadora.TemTudo.Api.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Clientes", (string)null);
+                    b.ToTable("Clientes");
                 });
 
             modelBuilder.Entity("Locadora.TemTudo.Api.Models.ClienteEndereco", b =>
@@ -102,7 +104,7 @@ namespace Locadora.TemTudo.Api.Data.Migrations
 
                     b.HasIndex("ClienteId");
 
-                    b.ToTable("ClientesEnderecos", (string)null);
+                    b.ToTable("ClientesEnderecos");
                 });
 
             modelBuilder.Entity("Locadora.TemTudo.Api.Models.LogErro", b =>
@@ -132,7 +134,7 @@ namespace Locadora.TemTudo.Api.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("LogsErros", (string)null);
+                    b.ToTable("LogsErros");
                 });
 
             modelBuilder.Entity("Locadora.TemTudo.Api.Models.ClienteEndereco", b =>
