@@ -1,0 +1,10 @@
+﻿services:
+	
+	depends_on: Usado para setar se o serviço depende de outro.
+	volumes: Usado para mapear os dados do container em uma pasta local na máquina, 
+		 para caso seja destruído o container os dados não serão perdidos.
+
+
+OBSERVAÇÕES
+- Para iniciar o docker automáticamente com sql e localhost 
+  é so executar o comando na pasta que contem o Dockerfile e compose: docker-compose up --build

@@ -1,0 +1,22 @@
+﻿version: '3.4'
+
+services:
+   locadoraapi:
+     image: ${DOCKER_REGISTRY-}locadora
+     build:
+       context: .
+       dockerfile: .
+     ports:
+       - "8081:80"
+     depends_on:
+      - sqldata
+    
+   sqldata:
+     image: mcr.microsoft.com/mssql/server:2019-latest
+     environment:
+       - SA_PASSWORD=SaAdmin#2022
+       - ACCEPT_EULA=Y
+     volumes:
+        - C:\Docker\Locadora:/var/opt/mssql/data
+     ports:
+      - "1450:1433"
