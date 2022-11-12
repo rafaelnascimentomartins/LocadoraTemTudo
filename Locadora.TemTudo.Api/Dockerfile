@@ -1,7 +1,7 @@
 #FROM -> Define a imagem que estara utilizando no projeto.
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build-env
 #Expor a porta da aplicação na porta 80
-EXPOSE 80
+EXPOSE 5000
 #WORKDIR Define a pasta padrão do container
 WORKDIR /app
 
@@ -22,3 +22,4 @@ WORKDIR /app
 COPY --from=build-env /app/out .
 #Configurando container para ser executado, no momento que levantar a aplicação
 ENTRYPOINT ["dotnet", "locadora.dll"]
+#ENTRYPOINT ["dotnet", "run"]

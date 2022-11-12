@@ -1,5 +1,8 @@
 ﻿services:
-	
+	image: Usado para setar a imagem
+	build: Usado para carregar imagem
+		context: Usado para setar a raiz do projeto
+		dockerfile: Usado par setar a raiz do arquivo Dockerfile
 	depends_on: Usado para setar se o serviço depende de outro.
 	volumes: Usado para mapear os dados do container em uma pasta local na máquina, 
 		 para caso seja destruído o container os dados não serão perdidos.

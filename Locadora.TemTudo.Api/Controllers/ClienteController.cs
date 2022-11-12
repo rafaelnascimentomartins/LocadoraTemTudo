@@ -3,6 +3,8 @@ using Locadora.TemTudo.Api.Data.Repositories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Locadora.TemTudo.Api.Data;
+using Locadora.TemTudo.Api.DTOs;
+using Locadora.TemTudo.Api.Services;
 
 namespace Locadora.TemTudo.Api.Controllers
 {
@@ -27,11 +29,27 @@ namespace Locadora.TemTudo.Api.Controllers
         [HttpGet]
         public IActionResult BuscarClientes()
         {
+            List<ClienteDTO> retorno = new();
             try
             {
                 var clientesBase = _clienteRepository.BuscarClientes();
 
-                return Ok(clientesBase);
+                if(clientesBase.Count() > 0)
+                {
+                    foreach (Cliente cliente in clientesBase)
+                    {
+                        ClienteDTO dto = new();
+
+                        dto.Nome = cliente.Nome;
+                        dto.DataNascimento = cliente.DataNascimento.ToShortDateString();
+                        dto.Email = cliente.Email;
+                        dto.CPF = cliente.CPF;
+                        
+                        retorno.Add(dto);
+                    }
+                }
+
+                return Ok(retorno);
             }
             catch (Exception ex)
             {
@@ -46,10 +64,14 @@ namespace Locadora.TemTudo.Api.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpPost]
-        public IActionResult Adicionar(Cliente model)
+        public IActionResult Adicionar(ClienteDTO dto)
         {
+            Cliente model = new();
             try
             {
+                model.Nome = dto.Nome;
+                model.CPF = dto.CPF.Replace(".","").Replace("-","");
+
                 //PROXIMA AULA CRIAR REGRAS, CONVERSÕES E VALIDAÇÕES
                 _clienteRepository.Adicionar(model);
 

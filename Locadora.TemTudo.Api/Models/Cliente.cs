@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Locadora.TemTudo.Api.Models
 {
@@ -24,7 +25,7 @@ namespace Locadora.TemTudo.Api.Models
         //Definindo campo TelefoneFixo como não obrigatório.
         public string? TelefoneFixo { get; set; }
         public string? Celular { get; set; }
-        
+
         public List<ClienteEndereco> Enderecos { get; set; }
     }
 }
