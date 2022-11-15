@@ -71,6 +71,9 @@ namespace Locadora.TemTudo.Api.Controllers
             {
                 model.Nome = dto.Nome;
                 model.CPF = dto.CPF.Replace(".","").Replace("-","");
+                model.DataNascimento = Convert.ToDateTime(dto.DataNascimento);
+                model.Email = dto.Email;
+                
 
                 //PROXIMA AULA CRIAR REGRAS, CONVERSÕES E VALIDAÇÕES
                 _clienteRepository.Adicionar(model);

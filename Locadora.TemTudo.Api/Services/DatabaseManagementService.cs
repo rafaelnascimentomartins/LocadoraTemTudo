@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Locadora.TemTudo.Api.Services
 {
+    //Responsável por executar todas as migrations criadas no banco de dados sqlserver criado pelo docker-compose.yml
     public static class DatabaseManagementService
     {
         public static void MigrationInitialisation(this IApplicationBuilder app)

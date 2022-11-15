@@ -1,13 +1,14 @@
 ﻿version: '3.4'
 
 services:
+
    locadoraapi:
      image: ${DOCKER_REGISTRY-}locadora
      build:
        context: ../Locadora.TemTudo.Api
        dockerfile: ../Locadora.TemTudo.Api/Dockerfile
      ports:
-       - "5000"
+       - "8081:80"
      depends_on:
       - sqldata
     

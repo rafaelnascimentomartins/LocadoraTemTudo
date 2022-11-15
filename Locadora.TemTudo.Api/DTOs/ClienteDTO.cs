@@ -4,16 +4,16 @@ namespace Locadora.TemTudo.Api.DTOs
 {
     public class ClienteDTO
     {
-        //[Required(ErrorMessage="Campo Nome é obrigatório")]
+        [Required(ErrorMessage="Campo Nome é obrigatório")]
         public string Nome { get; set; }
 
-        //[Required(ErrorMessage = "Campo Data Nascimento é obrigatório")]
+        [Required(ErrorMessage = "Campo Data Nascimento é obrigatório")]
         public string DataNascimento { get; set; }
 
-        //[Required(ErrorMessage = "Campo E-mail é obrigatório")]
+        [Required(ErrorMessage = "Campo E-mail é obrigatório")]
         public string Email { get; set; }
 
-        //[Required(ErrorMessage = "Campo CPF é obrigatório")]
+        [Required(ErrorMessage = "Campo CPF é obrigatório")]
         public string CPF { get; set; }
         public string CpfStr 
         { 
