@@ -10,6 +10,7 @@ Obs: Necessita instalar o Docker for Windows!
 
 3º Criar o Dockerfile na raiz do projeto, observações de cada comando no próprio arquivo
 
+-- Executar etapa 4º apenas antes de criar o docker-compose e com docker file 100%, pois o docker-compose executa automáticamente.
 4º Executar em prompt de comando na pasta em que o Dockerfile esta presente: docker build -t locadora .
 	- Neste momento o docker build irá compilar o projeto e criar uma imagem com nome "locadora" a utilização do "." no final
 	  é para dizer que o Dockerfile esta na propria pasta que irá executar, por isso a importância de utilizar o comando na pasta
